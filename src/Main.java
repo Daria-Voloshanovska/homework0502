@@ -24,6 +24,9 @@ attack() (атаковать)
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+GameCharacter warrior = new Warrior("Warrior", true);
+GameCharacter archer = new Archer("Archer");
+
     }
 }
