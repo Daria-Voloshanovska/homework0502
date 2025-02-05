@@ -14,7 +14,7 @@ public class Warrior extends GameCharacter{
         super.takeDamage(damage);
     }
 
-    @Override
+
     public void attack(){
         System.out.println(name + " attacks with a sword!");
     }

@@ -24,23 +24,31 @@ attack() (атаковать)
 
 public class Main {
     public static void main(String[] args) {
+        GameCharacter[] characters = {
+                new Warrior("Warrior", true),
+                new Archer("Archer"),
+                new Mage("Mage")
+        };
 
-GameCharacter warrior = new Warrior("Warrior", true);
-GameCharacter archer = new Archer("Archer");
-GameCharacter mage = new Mage("Mage");
+        for (GameCharacter character : characters) {
+            character.levelUp();
+            character.levelUp();
+        }
 
-
-warrior.levelUp();
-warrior.levelUp();
-warrior.levelUp();
-archer.levelUp();
-archer.levelUp();
-mage.levelUp();
-mage.levelUp();
-
-
-warrior.attack();
-archer.attack();
-mage.attack();
+        for (GameCharacter attacker : characters) {
+            for (GameCharacter target : characters) {
+                if (!attacker.equals(target)) {
+                    attacker.attack(target);
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+

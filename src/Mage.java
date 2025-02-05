@@ -4,7 +4,7 @@ public class Mage extends GameCharacter{
         super(name,0,100);
     }
 
-    @Override
+
     public void attack(){
         System.out.println(name + " casts a spell!");
     }
