@@ -27,6 +27,20 @@ public class Main {
 
 GameCharacter warrior = new Warrior("Warrior", true);
 GameCharacter archer = new Archer("Archer");
+GameCharacter mage = new Mage("Mage");
 
+
+warrior.levelUp();
+warrior.levelUp();
+warrior.levelUp();
+archer.levelUp();
+archer.levelUp();
+mage.levelUp();
+mage.levelUp();
+
+
+warrior.attack();
+archer.attack();
+mage.attack();
     }
 }
